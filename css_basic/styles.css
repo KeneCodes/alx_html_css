@@ -1,0 +1,39 @@
+/* Tell the body it’s a flex container and stack children vertically */
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh; /* full screen height */
+}
+
+/* Make main a flex container too, laying children side-by-side */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* take remaining vertical space */
+}
+
+/* Article takes 2/3 of width */
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+/* Aside takes 1/3 of width */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #eaeaea;
+}
+
+/* Optional styling for header and footer */
+header,
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
